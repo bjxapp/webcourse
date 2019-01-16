@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #p {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            //do something
+            var p = document.getElementById("p");
+
+            var tt = function tap() {
+                p.style.background = "red";
+            }
+            p.onclick = tt;
+        }
+
+    </script>
+</head>
+<body>
+    <p id="p">这是一个P标签</p>
+</body>
+</html>
